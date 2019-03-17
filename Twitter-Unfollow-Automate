@@ -1,0 +1,14 @@
+__cnt__ = 0;
+__leng__=100;
+
+
+for (i = 0; i < 10; i++) {
+[].slice.call(document.querySelectorAll(' .unfollow-text')).forEach(function(button) {
+      setTimeout(function() {
+        button.click();
+      __leng__=__leng__+100;
+       window.scrollTo(300, __leng__);
+    }, __cnt__++ * (Math.floor(Math.random() * 5) + 500)  );
+ 
+});
+}
